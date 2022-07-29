@@ -29,6 +29,7 @@
             super(...arguments);
             this.xc = '123';
         }
+        // name: string = '一直叫旺财'
         run() {
             console.log(`${this.name}在跑`);
         }

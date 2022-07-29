@@ -17,7 +17,9 @@
     abstract sayHello(): void
   }
   class Dog extends Animal {
-    sayHello() {}
+    sayHello() {
+      return 123
+    }
   }
   const dog = new Dog('旺财')
   console.log(dog)

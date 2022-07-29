@@ -61,6 +61,30 @@ module.exports = {
         // 要排除的文件
         exclude: /node-modules/,
       },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          // 引入postcss
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    {
+                      browser: 'last 10 versions',
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+          'less-loader',
+        ],
+      },
     ],
   },
   // 配置webpack插件

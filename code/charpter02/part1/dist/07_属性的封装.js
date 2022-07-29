@@ -39,6 +39,14 @@
         set name(value) {
             this._name = value;
         }
+        get age() {
+            return this._age;
+        }
+        set age(value) {
+            if (value >= 0) {
+                this._age = value;
+            }
+        }
     }
     const per = new Person('孙悟空', 18);
     console.log(per);
@@ -64,6 +72,7 @@
         }
     }
     class C {
+        // 可以直接将属性定义在构造函数中
         constructor(name, age) {
             this.name = name;
             this.age = age;

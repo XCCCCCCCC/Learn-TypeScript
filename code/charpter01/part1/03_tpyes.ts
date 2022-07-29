@@ -18,7 +18,7 @@ let d
 d = 10
 d = 'hello'
 
-// unknown 表示位置类型的值
+// unknown 表示未知类型的值
 let e: unknown
 e = 10
 e = 'hello'
@@ -54,8 +54,5 @@ function fn(): void {
 function fn2(): never {
   throw new Error('')
 }
-
-
-
 
 export = {}

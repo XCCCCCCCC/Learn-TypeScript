@@ -30,5 +30,6 @@ class Person {
   }
 }
 const per = new Person()
+per.name = '猪八戒'
 console.log(per)
-console.log(Person.age)
+// console.log(Person.age)
