@@ -41,8 +41,9 @@ let g: Array<number>
  * 元组,元组就是固定长度的数组
  * 语法: [类型, 类型, ...]
  */
-let h: [string, string]
-h = ['1', '3']
+let h: [string, string, number]
+h = ['1', '3', 3]
+// h[1].split()
 
 /**
  * enum 枚举
